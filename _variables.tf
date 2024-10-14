@@ -35,7 +35,7 @@ variable "partition_key_kind" {
 
 variable "partition_key_version" {
   type        = number
-  default     = 1
+  default     = 2
   description = "The partition key version for the Cosmos DB SQL container. Possible values are 1 or 2. Defaults to `1`."
 }
 
