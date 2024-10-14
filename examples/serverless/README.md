@@ -33,7 +33,8 @@ data "azurerm_cosmosdb_sql_database" "example" {
 }
 
 module "example" {
-  source                      = "git::git@ssh.dev.azure.com:v3/JasperEnginesTransmissions/JETDEV/DVO_TerraformModules//src//azurerm//cosmosdb_sql_database"
+  source  = "TaleLearnCode/cosmosdb_sql_database/azurerm"
+  version = "0.0.2"
   providers = {
     azurerm = azurerm
   }
